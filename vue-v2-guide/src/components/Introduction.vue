@@ -27,12 +27,14 @@
 import DeclarativeRendering from './introduction/DeclarativeRendering.vue';
 import ConditionalsLoops from './introduction/ConditionalsLoops.vue';
 import HandlingUserInput from './introduction/HandlingUserInput.vue';
+import ComposingComponents from './introduction/ComposingComponents.vue';
 
 export default {
   components: {
     DeclarativeRendering,
     ConditionalsLoops,
-    HandlingUserInput
+    HandlingUserInput,
+    ComposingComponents
   },
   data() {
     return {
