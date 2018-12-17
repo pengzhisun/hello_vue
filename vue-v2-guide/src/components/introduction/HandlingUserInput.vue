@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  props: {
+  metadata: {
     title: 'Handling User Input'
   },
   data() {

@@ -30,12 +30,14 @@ import HandlingUserInput from './introduction/HandlingUserInput.vue';
 import ComposingComponents from './introduction/ComposingComponents.vue';
 
 export default {
+  /* eslint-disable vue/no-unused-components */
   components: {
     DeclarativeRendering,
     ConditionalsLoops,
     HandlingUserInput,
     ComposingComponents
   },
+  /* eslint-enable vue/no-unused-components */
   data() {
     return {
       subComponentTitle: '',
@@ -56,7 +58,7 @@ export default {
 
           infos.push({
             componentName,
-            componentTitle: component.props.title
+            componentTitle: component.metadata.title
           });
         }
       }

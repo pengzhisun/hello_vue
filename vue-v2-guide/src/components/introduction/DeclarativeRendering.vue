@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  props: {
+  metadata: {
     title: 'Declarative Rendering'
   },
   data() {

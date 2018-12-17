@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  props: {
+  metadata: {
     title: 'Conditional And Loops'
   },
   data() {

@@ -9,9 +9,9 @@
     <div>
       <h3>Sample 02</h3>
       <ol>
-        <TodoItem02 v-for="item in sample_02.groceryList"
-                    v-bind:todo="item"
-                    v-bind:key="item.id">
+        <TodoItem02 v-for='item in sample_02.groceryList'
+                    v-bind:todo='item'
+                    v-bind:key='item.id'>
         </TodoItem02>
       </ol>
     </div>
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import TodoItem01 from "./ComposingComponents/TodoItem01.vue";
-import TodoItem02 from "./ComposingComponents/TodoItem02.vue";
+import TodoItem01 from './ComposingComponents/TodoItem01.vue';
+import TodoItem02 from './ComposingComponents/TodoItem02.vue';
 
 export default {
-  props: {
-    title: "Composing with Components"
+  metadata: {
+    title: 'Composing with Components'
   },
   components: {
     TodoItem01,
@@ -36,15 +36,15 @@ export default {
         groceryList: [
           {
             id: 0,
-            text: "Vegetables"
+            text: 'Vegetables'
           },
           {
             id: 1,
-            text: "Cheese"
+            text: 'Cheese'
           },
           {
             id: 2,
-            text: "Whatever else humans are supposed to eat"
+            text: 'Whatever else humans are supposed to eat'
           }
         ]
       }
